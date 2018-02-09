@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.sections{
+    background-color: lightgrey;
+}
+
+section{
+    width: 98%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    min-height: 50vh;
+    grid-gap: 1.2em;
+    padding: 0.5em;
+}
+
+svg{
+    height: 250px;
+    width: 300px;
+
+}
+
+
+.SVGblok{
+    float: left;
+    stroke: black;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 300px;
+    transition: stroke-dashoffset 2s ease-in-out;
+}
+
+.SVGblok:hover{
+    stroke-dashoffset: 0;
+}
